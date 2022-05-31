@@ -28,35 +28,51 @@
   <style>
 
 #top-menu {
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  color: #5F9EA0;
-  width: 11em;
+position: fixed;
+z-index: 10;
+left: 0;
+right: 0;
+top: 0;
+background-color:rgba(255,255,0,0.5); /*透明效果*/
 }
-#Short Bio{
-  position: fixed;
-  left: 10%;
-  top: 0%;
-  width: 2em;
+#top-menu li {
+float: left;
+list-style: none;
 }
-#Publications{
-  position: fixed;
-  left: 30%;
-  top: 0%;
-  width: 2em;
+#top-menu a {
+display: block;
+padding: 5px 25px 7px 25px;
+width: 4em;
+text-align: center;
+-webkit-transition: .5s all ease-out;
+-moz-transition: .5s all ease-out;
+transition: .5s all ease-out;
+border-top: 3px solid white;
+color: #aaa;
+text-decoration: none;
 }
-#Projects{
-  position: fixed;
-  left: 50%;
-  top: 0%;
-  width: 2em;
+#top-menu a:hover {
+color: #000;
 }
-#Resources{
-  position: fixed;
-  left: 70%;
-  top: 0%;
-  width: 2em;
+#top-menu li.active a {
+border-top: 3px solid #333;
+color: red;
+}
+#Short Bio {
+position: absolute;
+top: 300px;
+}
+#Publications {
+position: absolute;
+top: 600px;
+}
+#Projects {
+position: absolute;
+top: 800px;
+}
+#Resources {
+position: absolute;
+top: 1200px;
 }
 </style>
   </head>
@@ -64,11 +80,12 @@
   <body>
 
 
-<ul id=menu>
-<li class ="boxed"><a href="#bio"><font color="#c03c3b">Short Bio</font></a>
-<li class ="boxed"><a href="#publications"><font color="#c03c3b">Publications</font></a>
-<li class ="boxed"><a href="#projects"><font color="#c03c3b">Projects</font></a>
-<li class ="boxed"><a href="#resources"><font color="#c03c3b">Resources</font></a>
+<ul id=top-menu>
+<li class ="boxed"><a href="#"><font color="#c03c3b">Top</font></a></li>
+<li class ="boxed"><a href="#bio"><font color="#c03c3b">Short Bio</font></a></li>
+<li class ="boxed"><a href="#publications"><font color="#c03c3b">Publications</font></a></li>
+<li class ="boxed"><a href="#projects"><font color="#c03c3b">Projects</font></a></li>
+<li class ="boxed"><a href="#resources"><font color="#c03c3b">Resources</font></a></li>
 </ul>
 
 
